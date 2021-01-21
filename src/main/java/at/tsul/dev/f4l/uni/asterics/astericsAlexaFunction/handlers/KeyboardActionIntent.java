@@ -42,7 +42,6 @@ public class KeyboardActionIntent implements RequestHandler {
         return handlerInput.getResponseBuilder()//
                 .withShouldEndSession(false)//
                 .withSpeech(statusMessage)//
-                .withReprompt(statusMessage)//
                 .build();
     }
 }

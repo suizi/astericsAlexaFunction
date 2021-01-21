@@ -18,6 +18,6 @@ public class HelpIntentHandler implements RequestHandler {
                 + "Commands which are possible now are:"//
                 + "right click the mouse, type/enter new line on the keyboard"//
                 + "or open the app notepad, text editor or steam on my computer.";
-        return handlerInput.getResponseBuilder().withSpeech(say).build();
+        return handlerInput.getResponseBuilder().withShouldEndSession(false).withSpeech(say).build();
     }
 }

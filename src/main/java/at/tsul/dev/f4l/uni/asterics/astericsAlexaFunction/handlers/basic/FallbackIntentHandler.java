@@ -15,6 +15,6 @@ public class FallbackIntentHandler implements RequestHandler {
     @Override
     public Optional<Response> handle (HandlerInput handlerInput) {
         String say = "Sorry, I don't know that. You can try saying help!";
-        return handlerInput.getResponseBuilder().withSpeech(say).withReprompt(say).build();
+        return handlerInput.getResponseBuilder().withShouldEndSession(false).withSpeech(say).withReprompt(say).build();
     }
 }
