@@ -1,0 +1,96 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "the asterics integration",
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      },
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "ApplicationLaunchIntent",
+          "slots": [
+            {
+              "name": "applicationName",
+              "type": "applicationName"
+            }
+          ],
+          "samples": [
+            "launch the app {applicationName} on my computer"
+          ]
+        },
+        {
+          "name": "MouseActionIntent",
+          "slots": [],
+          "samples": [
+            "right click the mouse"
+          ]
+        },
+        {
+          "name": "KeyboardActionIntent",
+          "slots": [
+            {
+              "name": "keyCombination",
+              "type": "keyCombination"
+            }
+          ],
+          "samples": [
+            "type {keyCombination} on the keyboard",
+            "press {keyCombination} on the keyboard"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "applicationName",
+          "values": [
+            {
+              "name": {
+                "value": "steam"
+              }
+            },
+            {
+              "name": {
+                "value": "notepad",
+                "synonyms": [
+                  "text editor"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "keyCombination",
+          "values": [
+            {
+              "name": {
+                "value": "new line"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
