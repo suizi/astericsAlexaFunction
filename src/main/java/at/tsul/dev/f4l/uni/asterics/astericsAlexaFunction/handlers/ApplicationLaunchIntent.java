@@ -12,6 +12,12 @@ import com.amazon.ask.request.Predicates;
 
 import java.util.Optional;
 
+/**
+ * This class offers the implementation for the "ApplicationLaunchIntent".
+ *
+ * @author Thomas Sulzbacher
+ * @author Lisa Fixl
+ */
 public class ApplicationLaunchIntent implements RequestHandler {
 
     @Override

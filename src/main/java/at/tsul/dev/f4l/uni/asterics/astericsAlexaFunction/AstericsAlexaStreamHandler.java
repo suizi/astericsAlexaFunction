@@ -10,7 +10,14 @@ import at.tsul.dev.f4l.uni.asterics.astericsAlexaFunction.handlers.basic.Session
 import com.amazon.ask.Skill;
 import com.amazon.ask.SkillStreamHandler;
 import com.amazon.ask.Skills;
+import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 
+/**
+ * This class represents the entry-point for the AWS lambda function.
+ *
+ * @author Thomas Sulzbacher
+ * @author Lisa Fixl
+ */
 public class AstericsAlexaStreamHandler extends SkillStreamHandler {
 
     private static Skill getSkill () {
@@ -29,6 +36,9 @@ public class AstericsAlexaStreamHandler extends SkillStreamHandler {
                 .build();
     }
 
+    /**
+     * Entry-point method, registering all necessary {@link RequestHandler}s.
+     */
     public AstericsAlexaStreamHandler () {
         super(getSkill());
     }

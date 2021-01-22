@@ -9,6 +9,12 @@ import com.amazon.ask.request.Predicates;
 
 import java.util.Optional;
 
+/**
+ * This class offers the implementation for the "MouseActionIntent".
+ *
+ * @author Thomas Sulzbacher
+ * @author Lisa Fixl
+ */
 public class MouseActionIntent implements RequestHandler {
 
     @Override

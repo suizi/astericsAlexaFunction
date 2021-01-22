@@ -6,8 +6,20 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+/**
+ * JaxRS annotated endpoint definition.
+ *
+ * @author Thomas Sulzbacher
+ * @author Lisa Fixl
+ */
 public interface AstericsEndpoint {
 
+    /**
+     * Performs a HTTP POST request.
+     *
+     * @param json the {@link AlexaRequestJson} to send within the request
+     * @return a {@link Response} object containing status code and a body in case of an error
+     */
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     @POST

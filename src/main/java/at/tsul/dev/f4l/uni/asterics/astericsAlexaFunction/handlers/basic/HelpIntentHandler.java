@@ -6,12 +6,19 @@ import com.amazon.ask.request.Predicates;
 
 import java.util.Optional;
 
+/**
+ * This class belongs to the basic {@link RequestHandler}s every Alexa skill must support.
+ *
+ * @author Thomas Sulzbacher
+ * @author Lisa Fixl
+ */
 public class HelpIntentHandler implements RequestHandler {
 
     @Override
     public boolean canHandle (HandlerInput handlerInput) {
         return handlerInput.matches(Predicates.intentName("AMAZON.HelpIntent"));
     }
+
     @Override
     public Optional<Response> handle (HandlerInput handlerInput) {
         String say = "You can use the mouse, keyboard or open an application with the asterics integration. "//

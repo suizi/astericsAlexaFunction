@@ -8,6 +8,12 @@ import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.requestType;
 
+/**
+ * This class belongs to the basic {@link RequestHandler}s every Alexa skill must support.
+ *
+ * @author Thomas Sulzbacher
+ * @author Lisa Fixl
+ */
 public class SessionEndedRequestHandler implements RequestHandler {
 
     @Override
